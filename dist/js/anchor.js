@@ -20,9 +20,7 @@ function onScroll () {
         $(this).addClass('header__nav-link--active');
         var hash  = $(this).attr('href');
         var target  = $(hash);
-        $("html, body").animate({
-            scrollTop: target.offset().top
-            }, 700, function(){
+        $("html, body").animate({scrollTop: target.offset().top - 50 }, 700, function(){
             window.location.hash = hash;
             $(document).on("scroll", onScroll);
             });
