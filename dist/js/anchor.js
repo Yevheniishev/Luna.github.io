@@ -9,7 +9,6 @@
            if( scroll > top && scroll < bottom){
                $('.header__nav-link--active').removeClass('header__nav-link--active');
                $('a[href="#'+id+'"]').addClass('header__nav-link--active');
-        
            }
         })
         });
